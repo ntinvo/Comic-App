@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbp-QX-RkQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbp-QX-RkQ">
                                 <rect key="frame" x="0.0" y="20" width="414" height="656"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cC-Hs-gCd">
@@ -25,6 +25,9 @@
                                 <state key="normal" title="Prev">
                                     <color key="titleColor" red="1" green="0.99308051220000004" blue="0.88164663359999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="prevAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVw-9I-ETG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rME-Xi-91r">
                                 <rect key="frame" x="327" y="684" width="67" height="44"/>
@@ -32,6 +35,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="0.9930805122071299" blue="0.881646633641611" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RrE-Ly-TGX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.52210489665670412" blue="0.098123011869468368" alpha="1" colorSpace="calibratedRGB"/>
